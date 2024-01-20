@@ -5,35 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js"></script>
 </head>
 
 <body>
-    <div class="mx-auto my-12 xl:w-[1200px]">
+    <div class="mx-auto my-12 xl:w-[1200px] text-slate-600">
         <div class="grid grid-cols-1 md:grid-cols-3">
             <div class="flex flex-col items-center gap-4">
-                <img src="https://github.com/masa506.png" class="w-36 h-36 rounded-full border border-slate-400" />
-                <h1 class="text-3xl font-black">
+                <img src="https://github.com/masa506.png"
+                    class="w-36 h-36 rounded-full border border-slate-400 hover:rotate-[360deg] duration-1000 ease-out hover:shadow-xl shadow-slate-800 transform-gpu" />
+                <h1 class="text-4xl font-black">
                     masa506
                 </h1>
+                <div class="flex gap-4">
+                    <a href="https://github.com/masa506" class="hover:text-slate-400 duration-200">
+                        <i class="fa-brands fa-github text-xl"></i>
+                    </a>
+                    <a href="https://twitter.com/qqkmsh" class="hover:text-sky-400 duration-200">
+                        <i class="fa-brands fa-twitter text-xl"></i>
+                    </a>
+                </div>
+                <span class="flex items-center">
+                    <span class="font-bold mx-2">Region</span>Japan🇯🇵
+                </span>
             </div>
-            <div class="m-2 col-span-2 flex flex-wrap gap-2">
-                <div class="p-4 block border border-slate-400 rounded-lg bg-sky-200">
+            <div class="m-2 col-span-2 flex flex-col md:block gap-4 flex-wrap select-none">
+                <div
+                    class="p-4 m-4 inline-block border border-slate-400 rounded-lg bg-sky-200 shadow-lg active:scale-95 active:brightness-95 duration-200">
                     <a class="text-xl font-bold">
                         About me
                     </a>
                     <br>
-                    岐阜高専コンピュータ倶楽部2年
+                    <ul>
+                        <li>
+                            岐阜高専コンピュータ倶楽部2年
+                        </li>
+                        <li>
+                            電気情報工学科
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-js"></i>
+                            <i class="fa-brands fa-python"></i>
+                            とか使えます(使えるだけ)
+                        </li>
+                    </ul>
                 </div>
-                <div class="p-4 block border border-slate-400 rounded-lg bg-orange-200">
-                    <a href="" class="text-xl font-bold">
-                        趣味
+                <div
+                    class="p-4 m-4 inline-block border border-slate-400 rounded-lg bg-orange-200 shadow-lg active:scale-95 active:brightness-95 duration-200">
+                    <a class="text-xl font-bold flex items-center">
+                        趣味💻
                     </a>
-                    <br>
-                    プログラミング
+                    <ul>
+                        <li>
+                            プログラミング
+                        </li>
+                        <li>
+                            ゲーム(作るほうが好き)
+                        </li>
+                        <li>
+                            イラスト漁り
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </body>
+<script>
+    twemoji.parse(document.body);
+</script>
+<style>
+    img.emoji {
+        height: 1em;
+        width: 1em;
+        margin: 0 .05em 0 .1em;
+        vertical-align: -0.1em;
+    }
+</style>
 
 </html>
